@@ -1,0 +1,523 @@
+*{   
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+}
+body{
+	background: #fff;
+}
+img{
+	border: 0;
+}
+/* 动画效果 */
+/* @keyframes feiji1{
+    0%{
+        transform: translateX(700px)
+    }
+    10%{
+        transform: translateX(0px)
+    }
+    90%{
+        transform: translateX(0px)
+    }
+    100%{
+        transform: translateX(-1300px)
+    }
+    
+} */
+.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9,.img10{
+	position: relative;
+}
+.move1.active{
+	position: absolute;
+	top: 4%;
+	/* transform:scale(1.1) ; */
+	transition: all 2s;
+}
+.one-m{
+	position: absolute;
+	bottom: -30%;
+	transition: all 4s;
+}
+.one-m.active{
+	position: absolute;
+	bottom: 30%;
+	transition: all 4s;
+}
+.two1 p{
+	color: #fff;
+	font-size: 40px;
+}
+.one-p{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -280px;
+	transform: scale(0);
+	transition: all 1s;
+	font-size: 100px;
+	color: #ccc;
+	text-align: center;
+}
+.one-p.active{
+	top: 20%;
+	transform: scale(1);
+	transition: all 1s;
+}
+.one-b{
+	position: absolute;
+	bottom: -20%;
+	transition: all 2s;
+}
+.one-b.active{
+	/* transition: all 2s; */
+	bottom: 20%;
+	transition: all 2s;
+}
+.two-top{
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	transform: scale(0);
+	transition: all 2s;
+}
+.two-top.active{
+	transition: all 2s;
+    transform: scale(1.2)
+}
+.two-m{
+	position: absolute;
+	top: 35%;
+	left: -10%;
+	transition: all 2s;
+}
+.two-m.active{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	transition: all 2s;
+}
+.two-l{
+	position: absolute;
+	bottom: -10%;
+	left: 50%;
+	margin-left: -410px;
+	transition: all 2s;
+	width: 800px;
+	height: 500px;
+}
+.two-l img{
+	width: 100%;
+	height: 100%;
+}
+.two-l.active{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	margin-left: -410px;
+	transition: all 2s;
+}
+.two-r{
+	position: absolute;
+	transition: all 2s;
+	top: 25%;
+	right: -10%;
+}
+.two-r.active{
+	position: absolute;
+	transition: all 2s;
+	top: 25%;
+	right: 10%;
+}
+.three-top{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -260px;
+	transition: all 2s;
+	transform: scale(0);
+}
+.three-top.active{
+	transform: scale(1);
+	transition: all 2s;
+}
+.three-bg{
+	position: absolute;
+	right: 15%;
+	bottom: 30%;
+	transform: scale(0);
+	/* opacity: 0; */
+	/* display: none; */
+	transition: all 1s;
+}
+.three-bg.active{
+    /* opacity: 1; */
+	transform: scale(1);
+    transition: all 1s;
+}
+.three-hand{
+	position: absolute;
+	right: 0px;
+	bottom: 10%;
+	opacity: 0.4;
+	transition: all 2s;
+}
+.three-hand.active{
+	right: 25%;
+	bottom: 20%;
+	opacity: 1;
+	transition: all 2s;
+}
+.four-top{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -255px;
+	transform: scale(0);
+    transition: all 2s;
+}
+.four-top.active{
+	transform: scale(1);
+    transition: all 2s;
+}
+.four-b{
+	position: absolute;
+	bottom: -10%;
+	left: 10%;
+}
+.four-b.active{
+   bottom: 25%;
+   transition: all 1s;
+}
+.four-c{
+	position: absolute;
+	bottom: -20%;
+	left: 10%;
+	transition: all 2s;
+}
+.four-c.active{
+	position: absolute;
+	bottom: 30%;
+	left: 10%;
+	transition: all 2s;
+}
+.five-top{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -255px;
+	/* opacity: 0; */
+	transform: scale(0);
+	transition: all 2s;
+}
+.five-top.active{
+	transform: scale(1);
+	transition: all 2s;
+}
+.five{
+	width: 180px;
+	height: 180px;
+}
+.five > img{
+	width: 100%;
+	height: 100%;
+}
+.five-main{
+	position: absolute;
+	bottom: 50%;
+	left: 0%;
+	transition: all 2s;
+}
+.five-main.active{
+	left: 15%;
+	/* transform: scale(1.1); */
+	transition: all 2s;
+}
+.five-l{
+	position: absolute;
+	bottom: 50%;
+	left: 20%;
+	transition: all 2s;
+}
+.five-l.active{
+	left: 35%;
+	/* transform: scale(1.1); */
+	transition: all 2s;
+}
+.five-mi{
+	position: absolute;
+	bottom: 50%;
+	right: 20%;
+	transition: all 2s;
+
+}
+.five-mi.active{
+	right: 35%;
+	/* transform: scale(1.1); */
+	transition: all 2s;
+}
+.five-center{
+	position: absolute;
+	bottom: 50%;
+	right: 0%;
+	transition: all 2s;
+}
+.five-center.active{
+	right: 15%;
+	/* transform: scale(1.1); */
+	transition: all 2s;
+}
+.six-top{
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     margin-left: -280px;
+     transform: scale(0);
+     transition: all 2s;
+}
+.six-top.active{
+    transform: scale(1);
+	transition: all 2s;
+}
+.six-main{
+	position: absolute;
+	top: -30%;
+	left: 10%;
+	transition: all 2s;
+}
+.six-main.active{
+	transition: all 2s;
+	top: 0%;
+}
+.six-con{
+	position: absolute;
+	top: 30%;
+	left: 0%;
+	transition: all 2s;
+}
+.six-con.active{
+	transition: all 2s;
+	left: 15%;
+}
+.seven-top{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -280px;
+	transform: scale(0);
+	transition: all 2s;
+}
+.seven-top.active{
+	transform: scale(1);
+	transition: all 2s;
+}
+.seven-b{
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+}
+.seven-tree{
+	position: absolute;
+	bottom: 37%;
+	left: 1%;
+}
+.seven-left{
+	position: absolute;
+	bottom:0%;
+	left: 5%;
+	transition: all 2s;
+}
+.seven-left.active{
+	bottom: 45%;
+	transition: all 2s;
+}
+.seven-ren{
+	position: absolute;
+	bottom:10%;
+	left: 40%;
+	transition: all 2s;
+}
+.seven-ren.active{
+	bottom: 55%;
+	transition: all 2s;
+}
+.eight-top{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -280px;
+	transform: scale(0);
+	transition: all 2s;
+}
+.eight-top.active{
+	transform: scale(1);
+	transition: all 2s;
+}
+.eight-right{
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+}
+.eight-mi{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+}
+.eight-mi.active{
+	left: 30%;
+	bottom: 45%;
+	transition: all 2s;
+}
+.eight-le{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+}
+.eight-le.active{
+	transition: all 2s;
+	bottom: 63%;
+	left: 20%;
+}
+.eight-left{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+}
+.eight-left.active{
+	bottom: 70%;
+	left: 10%;
+	transition: all 2s;
+}
+.nine-p{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	margin-left: -280px;
+	transform: scale(0);
+	transition: all 2s;
+}
+.nine-p.active{
+	transform: scale(1);
+	transition: all 2s;
+}
+.nine-top{
+	position: absolute;
+	top: 21.5%;
+	left: 50%;
+	transform: scale(0);
+	transition: all 2s;
+	font-size: 70px;
+	color: #fff;
+}
+.nine-top.active{
+	left: 24%;
+	transform: scale(1);
+	transition: all 2s;
+	font-size: 80px;
+	color: #fff;
+}
+.nine-left{
+	position: absolute;
+	bottom: 30%;
+	left: 50%;
+	margin-left: -160px;
+	transform: scale(0);
+    transition: all 2s;
+}
+.nine-left.active{
+	transform: scale(1);
+    transition: all 2s;
+}
+.nine-mi{
+	position: absolute;
+	bottom: 30%;
+	left: -10%;
+    transition: all 2s;
+}
+.nine-mi.active{
+	left: 10%;
+    transition: all 2s;
+}
+.nine-right{
+	position: absolute;
+	bottom: 30%;
+	right: -10%;
+	transition: all 2s;
+}
+.nine-right.active{
+	transition: all 2s;
+	right: 10%;
+}
+
+.ten-bg{
+	position: absolute;
+	top: 10%;
+}
+.ten-p{
+	position: absolute;
+	bottom: -50%;
+	left: 50%;
+	margin-left: -127px;
+	transition: all 2s;
+}
+.ten-p.active{
+	bottom: 50%;
+	margin-bottom: -35px;
+	transition: all 4s;
+}
+.ten-p:hover{
+	transform: scale(1.1);
+}
+/* .ten-bottom{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 555px;
+	height: 144px;
+	margin-left: -275px;
+	transform: scale(0);
+	transition: all 2s;
+}
+.ten-bottom.avtive{
+	width: 555px;
+	height: 144px;
+	transform: scale(1);
+	transition: all 2s;
+}
+.ten-to{
+	margin-left: 45px;
+	margin-bottom: 20px;
+} */
+.ten-to{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -230px;
+	transform: scale(0);
+	transition: all 2s;
+	text-align: center;
+	font-size: 80px;
+	color: #ccc;
+}
+.ten-to.active{
+	transform: scale(1);
+	transition: all 2s;
+}
+.ten-too{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	margin-left: -280px;
+	transform: scale(0);
+	transition: all 2s;
+}
+.ten-too.active{
+	transform: scale(1);
+	transition: all 2s;
+}
+
+
+
+
